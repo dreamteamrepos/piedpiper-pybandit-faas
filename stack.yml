@@ -1,0 +1,9 @@
+---
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+functions:
+  piedpiper-pybandit-function:
+    lang: python3-flask
+    handler: ./piedpiper-pybandit-function
+    image: piedpiper-pybandit-function:latest
